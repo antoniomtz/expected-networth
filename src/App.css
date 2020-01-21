@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+/*!
+ * Start Bootstrap - The Big Picture (https://startbootstrap.com/template-overviews/the-big-picture)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
+ */
+ body {
+  background: url('./background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.card{
+  box-shadow: 0 15px 10px 9px rgba(0, 0, 0, 0.5), 0 21px 26px 0 rgba(0, 0, 0, 0.30);  
+}
+
+.txt-shadow{
+ text-shadow: black 1px 0 10px;
+}
