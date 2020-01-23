@@ -45,7 +45,7 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#">What Should My Net Worth Be</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -70,77 +70,21 @@
   <!-- Page Content -->
   <section>
     <div class="container">
+
       <div class="row text-white">
-        <div class="col-lg-6 txt-shadow">
+        <div class="col-lg-8 txt-shadow">
           <h1 class="mt-5">Expected Net Worth calculator</h1>
-          <p>Using the formula ( [Your age] <em>times</em> [Annual Income] <em>divided</em> by 10 ) presented in <strong>The Millionaire Next Door</strong> by Thomas Stanley and William Danko. This calculation has some tweaks to improve accuracy adding years of work as a variable.</p>
-          <noscript>You need to enable JavaScript to run this app.</noscript>
-          <div id="root"></div>
+          <p>Using the formula ( [Your age] <em>times</em> [Annual Income] <em>divided</em> by 10 ) presented in
+            <strong>The Millionaire Next Door</strong> by Thomas Stanley and William Danko. This calculation has some
+            tweaks to improve accuracy adding years of work as a variable.</p>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-6 text-white">
-          <!-- Card -->
-          <div class="card-transparent">
-            <!-- Card body -->
-            <div class="card-body">
-              <form>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputEmail" placeholder="Age">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputPassword" placeholder="Yearly income (pre-tax)">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <label>Years at work:</label>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1">
-                      <label class="form-check-label" for="inlineRadio1"> Less than 5</label> </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                        value="option2">
-                      <label class="form-check-label" for="inlineRadio2">More than 5</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                        value="option3">
-                      <label class="form-check-label" for="inlineRadio3">10+</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <button type="submit" class="btn btn-primary btn-lg">Calculate</button>
-                  </div>
-                </div>
-              </form>
-
-            </div>
-            <!-- Card body -->
-          </div>
-          <!-- Card -->
-        </div>
-
-
-        <div class="col-lg-6">
-          <div class="card rounded">
-            <div class="card-body">
-              <h5 class="card-title">Your Net Worth by the age of X should be:</h5>
-              <h1>$500,000</h1>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root"></div>
+      
     </div>
   </section>
 </body>
+
 </html>
