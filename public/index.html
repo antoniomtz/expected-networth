@@ -5,26 +5,18 @@
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <!-- Font Awesome -->
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="What should my net worth be? - Expected Net worth calculator" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/android-chrome-192x192.png" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <title>React App</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <title>What Should My Net Worth Be</title>
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -48,7 +40,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#">What Should My Net Worth Be</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -63,7 +55,7 @@
             <a class="nav-link" href="#">About</a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </nav>
 
@@ -72,19 +64,29 @@
     <div class="container">
 
       <div class="row text-white">
-        <div class="col-lg-8 txt-shadow">
+        <div class="col-lg-10 txt-shadow">
           <h1 class="mt-5">Expected Net Worth calculator</h1>
-          <p>Using the formula ( [Your age] <em>times</em> [Annual Income] <em>divided</em> by 10 ) presented in
-            <strong>The Millionaire Next Door</strong> by Thomas Stanley and William Danko. This calculation has some
-            tweaks to improve accuracy adding years of work as a variable.</p>
+          <p>This calculator improves the formula ( [Your age] <em>times</em> [Annual Income] <em>divided</em> by 10 )
+            presented in
+            <strong>The Millionaire Next Door</strong> by Thomas Stanley and William Danko by adding into the formula
+            <em>years of work</em> to reduce the error for those
+            young professionals or individuals with few years in the workforce.
+          </p>
         </div>
       </div>
 
       <noscript>You need to enable JavaScript to run this app.</noscript>
       <div id="root"></div>
-      
+
     </div>
   </section>
-</body>
 
+  <footer class="footer">
+    <div class="container text-white txt-shadow">
+      <a href="https://github.com/antoniomtz/expected-networth" style="color: inherit; text-decoration: none;"
+        target="_blank"><i class="fab fa-github fa-2x"></i></a>
+    </div>
+  </footer>
+
+</body>
 </html>

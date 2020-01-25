@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import logo from './logo.svg';
 import './App.css';
 
 export default class extends Component{
@@ -10,6 +9,7 @@ export default class extends Component{
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  // Adds comma as thousands separators
   numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
@@ -17,7 +17,9 @@ export default class extends Component{
   // Calculate average Salary over the years with a annual decrease of 3%
   averageSalary(yearsAtWork,salary){
 
-    const averageRaise = 0.96 //Average anual raise in the USA is around 4%     
+    // Average anual raise in the USA is around 4%     
+    const averageRaise = 0.96 
+    
     let previousSalary = salary
     for (let i = 0; i < yearsAtWork-1; i++) {
       previousSalary = previousSalary * averageRaise;
@@ -32,11 +34,12 @@ export default class extends Component{
     return salary / yearsAtWork;        
   }
 
-  expectedNetWorth(age,salary,yearsAtWork,dependents){    
+  expectedNetWorth(age,salary,yearsAtWork,dependents){  
 
-    let temp = (age * this.averageSalary(parseInt(yearsAtWork,0),parseFloat(salary))) / 10;
+    let temp = age * (this.averageSalary(parseInt(yearsAtWork,0),parseFloat(salary))) / 10;
     this.state.result = this.numberWithCommas(temp.toFixed(2))
     this.setState({showResults: true});
+
   }
 
   handleSubmit(event) {
@@ -73,13 +76,6 @@ export default class extends Component{
                 </div>
                 <div className="form-group row">
                   <div className="col-sm-10">
-                    <input type="number" min="0" step="1" value={this.state.dependents} onChange={ (event)=> {
-                    this.setState({ dependents: event.target.value }) } } className="form-control" id="dependents"
-                    placeholder="Number of dependents" />
-                  </div>
-                </div>
-                <div className="form-group row">
-                  <div className="col-sm-10">
                     <button type="submit" className="btn btn-primary btn-lg">Calculate</button>
                   </div>
                 </div>
@@ -103,9 +99,9 @@ class Results extends Component {
         <h5 class="card-title text-center">Your Net Worth by the age of {this.props.age} should be:</h5>
         <h1 class="text-center">${this.props.result}</h1>
         <ul>
-          <li>Under accumulators of wealth (UAWs) are those whose real net worth is less than one-half of their expected net worth.</li>
-          <li>Average accumulators of wealth (AAW) are on par with their expected net worth.</li>
-          <li>Prodigious accumulators of wealth (PAWs) have a net worth twice their expected level.</li>
+          <li><strong>Under accumulators of wealth (UAWs)</strong> are those whose real net worth is less than one-half of their expected net worth.</li>
+          <li><strong>Average accumulators of wealth (AAW)</strong> are on par with their expected net worth.</li>
+          <li><strong>Prodigious accumulators of wealth (PAWs)</strong> have a net worth twice their expected level.</li>
         </ul>
       </div>
     </div>
