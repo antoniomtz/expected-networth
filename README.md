@@ -1,4 +1,4 @@
-# What Should Your Net Worth Be
+# What Should My Net Worth Be
 
 [Website](http://yournetworthcalculator.com)
 
