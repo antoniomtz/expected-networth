@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { TwitterShareButton } from 'react-twitter-embed';
 import './App.css';
 
 export default class extends Component{
@@ -36,8 +37,8 @@ export default class extends Component{
 
   expectedNetWorth(age,salary,yearsAtWork,dependents){  
 
-    let temp = age * (this.averageSalary(parseInt(yearsAtWork,0),parseFloat(salary))) / 10;
-    this.state.result = this.numberWithCommas(temp.toFixed(2))
+    let temp = age * (this.averageSalary(parseInt(yearsAtWork,0),parseFloat(salary))) / 10;    
+    this.setState({result: this.numberWithCommas(temp.toFixed(2))})
     this.setState({showResults: true});
 
   }
@@ -102,7 +103,11 @@ class Results extends Component {
           <li><strong>Under accumulators of wealth (UAWs)</strong> are those whose real net worth is less than one-half of their expected net worth.</li>
           <li><strong>Average accumulators of wealth (AAW)</strong> are on par with their expected net worth.</li>
           <li><strong>Prodigious accumulators of wealth (PAWs)</strong> have a net worth twice their expected level.</li>
-        </ul>
+        </ul>       
+        <TwitterShareButton 
+          url={'https://www.yournetworthcalculator.com/'} 
+          options={{ text: 'What should your net worth be? I calculated my expected net worth here... #networth #finance' }} 
+        />                  
       </div>
     </div>
   </div>);
