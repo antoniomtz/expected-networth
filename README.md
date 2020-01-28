@@ -2,13 +2,6 @@
 
 [Website](https://www.yournetworthcalculator.com)
 
-## Build and Run the project
-
-```bash
-npm install
-npm start
-```
-
 This calculator improves the formula ( [Your age] times [Annual Income] divided by 10 ) presented in *The Millionaire Next Door* by Thomas Stanley and William Danko 
 by adding *years of work* into the formula to reduce the error for those young professionals or individuals with few years in the workforce.
 
@@ -57,3 +50,10 @@ For example: dependents, current debt, living expenses, etc...
 Trent Hamm proposes the following formula in his post:
 
 https://www.thesimpledollar.com/financial-wellness/what-should-my-net-worth-be/
+
+## Build and Run the project
+
+```bash
+npm install
+npm start
+```
